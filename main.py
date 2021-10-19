@@ -14,11 +14,16 @@ driver.find_element(By.NAME, "LoginUserID").send_keys("15999833")
 driver.find_element(By.NAME, "LoginPassword").send_keys("15999833")
 driver.find_element(By.NAME, "LoginBtn").click()
 
-time.sleep(10)
+time.sleep(3)
 
 # 查看邮件数量
 driver.get("https://linkcom.muroran-it.ac.jp/Next60/default.cfm?version=next&app_cd=14&fuseaction=kms")
-print(driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[2]/td[0]/div/span").text)
+print(driver.find_element(By.XPATH, "//tr/td[0]/div/span").text)
+
+time.sleep(3)
+
+# 输出邮件列表
+
 
 
 
