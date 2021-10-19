@@ -18,7 +18,7 @@ time.sleep(3)
 
 # 查看邮件数量
 driver.get("https://linkcom.muroran-it.ac.jp/Next60/default.cfm?version=next&app_cd=14&fuseaction=kms")
-print(driver.find_element(By.XPATH, "//tr/td[0]/div/span").text)
+print(driver.find_element(By.XPATH, "//td/div/a/span").text)
 
 time.sleep(3)
 
