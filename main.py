@@ -13,3 +13,10 @@ driver.get("https://linkcom.muroran-it.ac.jp")
 driver.find_element(By.NAME, "LoginUserID").send_keys("15999833")
 driver.find_element(By.NAME, "LoginPassword").send_keys("15999833")
 driver.find_element(By.NAME, "LoginBtn").click()
+
+driver.find_element(By.LINK_TEXT, "伝言メモ").click()
+
+
+
+
+
